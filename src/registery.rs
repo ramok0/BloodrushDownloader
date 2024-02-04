@@ -3,7 +3,7 @@ use std::{ffi::CString};
 
 use ::windows::{Win32::{Foundation::MAX_PATH, System::Registry::{RegOpenKeyExA, RegQueryValueExA, HKEY, HKEY_LOCAL_MACHINE, KEY_READ}}};
 
-
+//TODO : ADD THE GAME TO STEAM SHORTCUTS, I AM WAY TOO LAZY TO DO THIS RN
 
 pub struct Registery {
 
