@@ -117,8 +117,9 @@ impl Downloader {
                     let state = state.as_mut().unwrap();
 
                     state.downloaded += chunk.len() as u64;
-                    state.speed = state.last_speed_check_downloaded as f64
-                        / state.last_speed_check.elapsed().as_secs_f64();
+                    state.last_speed_check_downloaded += chunk.len() as u64;
+                    
+                    state.speed = state.last_speed_check_downloaded as f64 / state.last_speed_check.elapsed().as_secs_f64();
 
                     if state.last_speed_check.elapsed().as_secs() >= 5 {
                         state.last_speed_check = Instant::now();
