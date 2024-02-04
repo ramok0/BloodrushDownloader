@@ -1,7 +1,7 @@
 use core::fmt;
-use std::{ffi::CString, os::windows, path::Display};
+use std::{ffi::CString};
 
-use ::windows::{core::s, Win32::{Foundation::MAX_PATH, System::Registry::{RegOpenKeyExA, RegQueryValueExA, HKEY, HKEY_LOCAL_MACHINE, KEY_READ}}};
+use ::windows::{Win32::{Foundation::MAX_PATH, System::Registry::{RegOpenKeyExA, RegQueryValueExA, HKEY, HKEY_LOCAL_MACHINE, KEY_READ}}};
 
 
 

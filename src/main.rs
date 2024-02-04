@@ -1,7 +1,7 @@
 use std::{env, path::PathBuf, str::FromStr, time::Duration};
 
-use registery::Registery;
-use windows::core::s;
+
+
 
 pub mod registery;
 pub mod privileges;
